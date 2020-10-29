@@ -3,7 +3,7 @@ import yaml
 import os
 
 class ImageNetCategory:
-    def __init__(self, path='imagenet_categories'):
+    def __init__(self, path=''):
         with open(os.path.join(path, 'imagenet1000_clsidx_to_labels.txt')) as f:
             self.data = yaml.load(f, Loader=yaml.FullLoader)
 
